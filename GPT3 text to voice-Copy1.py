@@ -61,8 +61,9 @@ with open('response.mp3', 'wb') as f:
    f.write(eleven_response.content)
 import subprocess
 subprocess.call(["afplay", "response.mp3"])
-#myobj.save("test.mp3")
-#return_code = subprocess.call(["afplay", "test.mp3"])
+myobj = eleven_response.content
+with open('{your_path_here}/test.mp3', 'wb') as f:
+    f.write(eleven_response.content)
 
 
 
