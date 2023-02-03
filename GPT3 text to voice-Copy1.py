@@ -1,33 +1,32 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
-# In[2]:
 
 
 import openai
 
 
-# In[3]:
+
 
 
 API_KEY= 'Your OpenAI API here'
 
 
-# In[4]:
+
 
 
 openai.api_key = API_KEY
 
-prompt = "Outline some of the things you would teach someone new about connecting to the OPENAI API"
 
 
-# In[5]:
+
+
 
 
 completions = openai.Completion.create(engine="text-davinci-003", prompt=prompt, max_tokens=1024)
 
 
-# In[6]:
+
 
 
 import requests
@@ -47,7 +46,7 @@ def elevenlabs_voice(text, voice_ID):
     return response
 
 
-# In[7]:
+
 
 
 import json
@@ -66,7 +65,7 @@ subprocess.call(["afplay", "response.mp3"])
 #return_code = subprocess.call(["afplay", "test.mp3"])
 
 
-# In[ ]:
+
 
 
 
