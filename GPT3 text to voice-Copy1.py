@@ -50,7 +50,7 @@ def elevenlabs_voice(text, voice_ID):
 
 
 import json
-prompt = "Write a goodbye note to a dear friend"
+prompt = input("Talk to me goose: ")
 voice_ID = 'ErXwobaYiN019PkySvjV'
 completions = openai.Completion.create(engine="text-davinci-003", prompt=prompt, max_tokens=1024)
 print(completions.choices[0].text)
